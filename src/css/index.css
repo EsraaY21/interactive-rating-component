@@ -1,0 +1,89 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --very-dark-blue: #131518;
+    --dark-blue: #262E38;
+    --light-gray: #969FAD;
+    --black-gradient: radial-gradient(#232A34, #181E27);
+    --white: #FFFFFF;
+    --orange: #FC7614;
+}
+
+
+body {
+    background-color: var(--very-dark-blue);
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Overpass', sans-serif;
+
+}
+
+.card {
+    width: 100%;
+    max-width: 412px;
+    border-radius: 30px;
+    padding: 32px;
+    padding-right: 39px;
+    background: var(--black-gradient);
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    background-color: var(--dark-blue);
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: var(--light-gray);
+    margin-bottom: 24px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+
+ol {
+    display: flex;
+    gap: 21px;
+    margin-bottom: 32px;
+}
+
+li {
+    color: var(--light-gray);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    width: 51px;
+    height: 51px;
+    display: flex;
+    background-color: var(--dark-blue);
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: var(--orange);
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 22.5px;
+}
