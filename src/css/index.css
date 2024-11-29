@@ -113,7 +113,7 @@ button:hover {
 /* Thank you card ****************** */
 
 
-.card.thank {
+.card.thank.thank {
     padding: 45px 32px;
     display: flex;
     flex-direction: column;
@@ -122,24 +122,24 @@ button:hover {
 }
 
 
-.card img {
+.card.thank img {
     margin-inline: auto;
 
 }
 
-.card .result {
+.card.thank .result {
     color: var(--orange);
     background-color: var(--dark-blue);
     border-radius: 22.5px;
     padding: 4px 20px;
 }
 
-.card h1,
-.card p {
+.card.thank h1,
+.card.thank p {
     text-align: center;
 }
 
-.card p {
+.card.thank p {
     padding-right: 2%;
 }
 

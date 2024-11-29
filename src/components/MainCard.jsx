@@ -3,7 +3,9 @@ import { AppContext } from "../Context/AppContext";
 import { useContext } from "react";
 
 export default function MainCard() {
-  const { selected, setSelected } = useContext(AppContext);
+  const { selected, setSelected, submitted, setSubmitted } =
+    useContext(AppContext);
+
   const numbers = [1, 2, 3, 4, 5];
 
   return (
@@ -28,7 +30,7 @@ export default function MainCard() {
         ))}
       </ol>
 
-      <button type="submit">Submit</button>
+      <button onClick={() => setSubmitted(true)}>Submit</button>
     </main>
   );
 }
