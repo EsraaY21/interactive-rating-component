@@ -134,6 +134,16 @@ button:hover {
     padding: 4px 20px;
 }
 
+.card h1,
+.card p {
+    text-align: center;
+}
+
+.card p {
+    padding-right: 2%;
+}
+
+
 @media (max-width: 450px) {
     .card {
         border-radius: 15px;

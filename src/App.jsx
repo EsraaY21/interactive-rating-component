@@ -5,8 +5,8 @@ import ThankYouCard from "./components/ThankYouCard";
 function App() {
   return (
     <>
-      <MainCard />
-      {/* <ThankYouCard /> */}
+      {/* <MainCard /> */}
+      <ThankYouCard />
     </>
   );
 }
