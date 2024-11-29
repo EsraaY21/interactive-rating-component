@@ -1,13 +1,10 @@
-import { useState } from "react";
 import star from "/images/icon-star.svg";
+import { AppContext } from "../Context/AppContext";
+import { useContext } from "react";
 
 export default function MainCard() {
-  const [selected, setSelected] = useState(null);
+  const { selected, setSelected } = useContext(AppContext);
   const numbers = [1, 2, 3, 4, 5];
-
-  const handleSelect = (number) => {
-    setSelected(number);
-  };
 
   return (
     <main className="card">
@@ -24,7 +21,7 @@ export default function MainCard() {
           <li
             className={selected === number ? "selected" : ""}
             key={number}
-            onClick={() => handleSelect(number)}
+            onClick={() => setSelected(number)}
           >
             {number}
           </li>
