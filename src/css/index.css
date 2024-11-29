@@ -74,6 +74,20 @@ li {
     border-radius: 100%;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+li:hover {
+    background-color: var(--orange);
+    color: var(--dark-blue);
+
+}
+
+li.selected {
+    color: var(--dark-blue);
+    background-color: var(--white);
+
 }
 
 button {
@@ -86,4 +100,11 @@ button {
     width: 100%;
     border: none;
     border-radius: 22.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+button:hover {
+    background-color: var(--white);
 }
