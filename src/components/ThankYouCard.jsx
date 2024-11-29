@@ -7,7 +7,7 @@ export default function ThankYouCard() {
 
   return (
     <main className="card thank">
-      <img src={card} alt="" />
+      <img src={card} alt="thank you" />
       <p className="result">You selected {selected} out of 5</p>
 
       <div className="text">

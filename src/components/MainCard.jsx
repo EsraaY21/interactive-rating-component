@@ -11,7 +11,7 @@ export default function MainCard() {
   return (
     <main className="card">
       <div className="icon">
-        <img src={star} />
+        <img src={star} alt="icon" />
       </div>
       <h1>How did we do?</h1>
       <p>
